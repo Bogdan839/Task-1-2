@@ -1,0 +1,76 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.flag {
+    max-width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag-container {
+    height: 150px;
+    width: 300px;
+    border: 1px solid #000;
+
+    margin-bottom: 10px;
+
+    font-size: 0;
+    color: transparent;
+    position: relative;
+}
+
+/* flag Ukraine */
+.flag-ukr {
+    background: linear-gradient(to bottom, #1aa3ff 50%, #ffff1a 50%);
+}
+
+/* flag Japan */
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate3d(-50%, -50%, 0);
+
+    height: 90px;
+    width: 90px;
+    background: #b30000;
+    border-radius: 50%;
+}
+
+/* flag Iceland */
+.flag-icel {
+    background: linear-gradient(#0059b3, #0059b3) 0 0 /50px 50px, linear-gradient(#0059b3, #0059b3) 0 100% /50px 59px,
+        linear-gradient(#0059b3, #0059b3) 100% 0 /207px 50px, linear-gradient(#0059b3, #0059b3) 100% 100%/207px 58px,
+        linear-gradient(#af2300, #af2300) 60px 0/ 20px 100%, linear-gradient(#af2300, #af2300) 0 60px/ 100% 20px;
+    background-repeat: no-repeat;
+}
+
+/* flag Czech Republic */
+.flag-chec {
+    background: linear-gradient(to bottom, #fff 50%, #b82500 50%);
+}
+
+.triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    border-style: solid;
+    border-width: 75px 0 74px 110px;
+    border-color: transparent transparent transparent #083476;
+}
